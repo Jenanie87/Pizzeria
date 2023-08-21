@@ -1,0 +1,40 @@
+.gradient-background {
+    background: linear-gradient(300deg, #198754, #198f23, #6dbb4f);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.colorwhite{
+    color: rgb(239, 243, 238);
+}
+
+hr{
+    box-shadow: 5px 10px 18px #050505;
+}
+
+.ClickFinger{
+    transform: rotate(-45deg);
+}
+
+.column{
+font-size: 1.25rem;
+font-weight: 300;
+margin-top: 0;
+margin-bottom: 1rem;
+}
+
+.collapse{
+    overflow: hidden;
+}
