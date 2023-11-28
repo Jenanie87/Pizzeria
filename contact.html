@@ -75,7 +75,53 @@
                       </div>
                       <div class="col-lg-5 col-sm-12">
                         <p><img src="./images/Fax.png" height="25px"/> Fax: +49 2307 55 96 94</p>
+                      <!--Open the Modal-->
+                      <button id="btn" class="buttonReserve">Tisch reservieren</button>
+                      <!-- The Modal -->
+                      <div id="modalReserve" class="modal">
+                      <!-- Modal Content-->
+                      <div class="modalContent">
+                        <span class="close">&times;</span>
+                        <p class="firstText">ONLINE RESERVIEREN</p>
+                        <p>Ristorante Bei Tino® Kamen</p>
+<!--                         <form autocomplete="on"> -->
+                          <div>
+                        <label for ="fname">Vorname:</label>
+                        <input class="fName" type="text" id="fname" name="fname">
+                          </div>
+                        <br><br>
+                        <div>
+                        <label for ="lname">Nachname:</label>
+                        <input class="lName" type="text" id="lname" name="lname">
+                        </div>
+                        <br><br>
+                        <div>
+                        <label for="phone">Telefonnummer:</label>
+                        <input class="phone" type="tel" id="phone" name="phone" autocomplete="tel">
+                        </div>
+                        <br><br>
+                        <div>
+                        <label for="email">E-Mail:</label>
+                        <input class="email" type="email" id="email" name="email" autocomplete="email">
+                        </div>
+                        <br><br>
+                        <label for="quantity">Anzahl:</label>
+                        <input class="quantity" type="number" id="quantity" name="quantity" min="1" max="30">
+                        <br><br>
+                        <input id="btnReserve" type="submit" class="buttonReserve" value="Reservieren">
+<!--                       </form> -->
                       </div>
+                      </div>
+                      <!-- The Modal 1 -->
+                      <div id="modalReserved" class="modal">
+                      <!-- Modal Content 1-->
+                      <div class="modalContent">
+                        <span class="close">&times;</span>
+                        <p class="secondText">Vielen Dank für Ihre Reservierung!</p>
+                        <br><br>
+                        <input id="btnClose" type="submit" class="buttonReserve" value="Schließen">
+                      </div>
+                    </div>
                     </div> 
                   </div> 
                 </p>
@@ -128,5 +174,6 @@
         </section>      
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 </body>
 </html>
